@@ -8,7 +8,7 @@ const dc = ["superman", "flash", "batman"]
 // const heros = marvel.concat(dc) // concatenates two arrays elements.
 // console.log(heros);
 
-const all_heros = [...marvel, ...dc] // It concatenates two arrays. It is an industrial standard to use this method.
+const all_heros = [...marvel, ...dc] // This is called spread operaor. It concatenates two arrays. It is an industrial standard to use this method.
 // console.log(all_heros);
 
 const arr = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
