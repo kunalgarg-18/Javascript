@@ -25,12 +25,16 @@
 
      // attachEvent()
     // jQuery - on
-
+    
+    /*********** Events ***********/
+    
     // type, timestamp, defaultPrevented
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
+    //EVENT PROPAGATION
+    
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
     // }, false)
@@ -39,10 +43,16 @@
     //     console.log("owl clicked");
     //     e.stopPropagation()
     // }, false)
+
+    
+    //There are two approaches of event propagation -> Bubbling Up and Capturing Mode
+    //Bubbling Up -> It goes from down to up. First owl clicked then clicked inside the ul.
+    //Capturing UP -> It goes from up to downn. First 'clicked inside the ul' and then 'owl'
+
     
     // document.getElementById('google').addEventListener('click',function(e){
     //     e.preventDefault();
-    //     e.stopPropagation()
+    //     e.stopPropagation() //Stops further bubbling up 
     //     console.log("google clicked");
     // }, false)
    
