@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayKunal = function(){
+        console.log("Kunal");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS series"
+    }
+
+    const changeMe = setTimeout(changeText, 2000) 
+    //It helps in executing a function after 2 seconds.
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+      // It takes a reference, which setTimeout we want to clear.
+      // It clears the work done by setTimeout.
+        console.log("STOPPED")
+    })
+</script>
+</html>
