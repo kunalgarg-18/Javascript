@@ -33,3 +33,5 @@ console.log(userOne.constructor) // Returns a reference to the same function.
 //new keyword creates a new object
 //constructor function is called due to new keyword
 // this keyword injects all the arguments written 
+
+instanceof(userOne)
